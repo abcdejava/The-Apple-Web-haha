@@ -1,0 +1,249 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clear:after{
+	content:"";       /*.clear:after 万能解决办法(专门用来清除浮动的类):解决高度塌陷,清除浮动*/
+	display: block;     /*把clear放在.html任何所设定的浮动的地方(父元素位置),就可以清除浮动*/
+	clear: both;
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.headerAd{
+	background: #444;
+	height: 40px;
+	color: #a8a8aa;
+}
+.headerAd .adContent{
+	width: 976px;
+	height: 40px;
+	margin: 0 auto; /*设置盒子居中*/
+	text-align: right;
+	line-height: 40px;
+	font-size: 12px;
+}
+
+.nav{
+	height: 44px;
+	background: rgba(45,45,45,0.98);
+	font-size: 14px;
+}
+.nav .navContent{
+	width: 1000px;
+	margin: 0 auto;
+}
+.nav .navContent a{
+	/*a标签模式是行标,设置为行标元素*/
+	display: inline-block;
+	width: 111.1px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+	float: left;
+	text-decoration: none;
+	transition: all 0.38s;
+}
+.nav .navContent a:hover{
+	box-shadow: 0 2px 3px #a8a8aa;
+	text-shadow: 0 3px 5px #a8a8aa;
+}
+.nav .navContent .logo{
+	background-image: url(../img/apple_logo.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+.nav .navContent .search{
+	background-image: url(../img/search_logo.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.nav .navContent .buyCar{
+	background-image: url(../img/buycar.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.b1{
+	margin-top: 84px;
+}
+.banner{
+	text-align: center;
+	padding: 50px 0;
+	background-color: #fafafa;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.banner h1{
+	font-size: 28px;
+	padding: 10px 0;
+}
+.banner p{
+	line-height: 1.38; /*P标签的行高=1.38*/
+	font-size: 21px;
+	font-weight: 400;
+	
+}
+.banner a{
+	color: #0070c9;
+	text-decoration: none;
+	font-size: 20px;
+	display: inline-block;
+	padding: 10px;
+}
+.b2{
+	margin-top: 15px;
+	height: 692px;
+	background-image: url(../img/iphone_xrl.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.b3{
+	margin-top: 15px;
+	height: 692px;
+	background-image: url(../img/iphone_xs__.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.b4{
+	margin-top: 15px;
+	height: 692px;
+	background-image: url(../img/watch_series_4_ll.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+
+.adList .banner{
+	width: 50%;
+	height: 592px;
+	float: left;
+	color: #FFFFFF;
+	font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.adList .banner h1{
+	padding: 0;
+}
+.adList .banner p{
+	font-size: 21px;
+	line-height: 1.23;
+	font-weight: 400;
+}
+.adList .banner a{
+	font-size: 14px;
+	line-height: 1.235;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.adList .a1{
+	border-top: 12px solid #FFFFFF;
+	border-bottom: 12px solid #FFFFFF;
+	border-left: 12px solid #FFFFFF;
+	border-right: 6px solid #FFFFFF;
+	
+	background-image: url(../img/monkey_.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+	background-color: #121a2f;
+}
+.adList .a2{
+	border-top: 12px solid #FFFFFF;
+	border-bottom: 12px solid #FFFFFF;
+	border-left: 6px solid #FFFFFF;
+	border-right: 12px solid #FFFFFF;
+	
+	background-image: url(../img/apple_music_.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+.adList .a2 .link span img{
+	width: 10px;
+	height: 10px;
+}
+
+.footer{
+	margin-top: 10px;
+	background-color: #f2f2f2;
+}
+.fmain{
+	width: 980px;
+	margin: 0 auto;
+}
+.item{
+	width: 20%;
+	float: left;
+}
+.item h5{
+	padding: 10px 0;
+}
+.item a{
+	font-size: 12px;
+	color: #333;
+	text-decoration: none;
+	margin: 0 0 10px;
+}
+.ftop{
+	width: 980px;
+	padding: 10px 0;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc; /*边框*/
+}
+.ftop p{
+	font-size: 12px;
+	color: #333;
+	margin: 10px 0;
+}
+.brief{
+	
+	width: 980px;
+	padding: 10px 0;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc; /*边框*/
+}
+.brief p{
+	font-size: 12px;
+	color: #333;
+	margin: 10px 0;
+}
+.brief a{
+	font-size: 12px;
+	color: #0070c9;
+	text-decoration: none;
+	margin: 0 0 10px;
+}
+
+.fbottom{
+	width: 980px;
+	margin: 0 auto;
+}
+.fbottom p{
+	font-size: 12px;
+}
+.ac-brief{
+	width: 50%;
+	float: left;
+	
+}
+.ac-brief p{
+	height: 2px;
+	font-size: 12px;
+}
+.ac-brief a{
+	font-size: 12px;
+}
+.ac-brief a{
+	display: inline-block;
+	width: 98px;
+	height: px;
+	text-align: center;
+	float: left;
+	text-decoration: none;
+}
